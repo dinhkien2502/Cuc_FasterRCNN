@@ -25,7 +25,7 @@ import caffe, os, sys, cv2
 import argparse
 
 CLASSES = ('__background__',)
-synsets = sio.loadmat(os.path.join('/media/VSlab2/imagenet/ILSVRC13', 'data', 'meta_det.mat'))
+synsets = sio.loadmat(os.path.join('/home/breathe/ILSVRC13', 'data', 'meta_det.mat'))
 for i in xrange(200):
     CLASSES = CLASSES + (synsets['synsets'][0][i][2][0],)
 

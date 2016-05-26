@@ -14,8 +14,8 @@ GPU_ID=$1
 NET=$2
 NET_lc=${NET,,}
 ITERS=100000
-DATASET_TRAIN=imagenet_val1
-DATASET_TEST=imagenet_val2
+DATASET_TRAIN=imagenet_val
+DATASET_TEST=imagenet_val
 
 array=( $@ )
 len=${#array[@]}

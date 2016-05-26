@@ -12,7 +12,7 @@ RoIDataLayer implements a Caffe Python layer.
 
 import caffe
 from fast_rcnn.config import cfg
-from roi_data_layer.minibatch import get_minibatch
+from roi_data_layer.minibatch import get_minibatch, NoLabels #Cuc Nguyen
 import numpy as np
 import yaml
 from multiprocessing import Process, Queue
@@ -32,9 +32,24 @@ class RoIDataLayer(caffe.Layer):
             inds = np.hstack((
                 np.random.permutation(horz_inds),
                 np.random.permutation(vert_inds)))
-            inds = np.reshape(inds, (-1, 2))
-            row_perm = np.random.permutation(np.arange(inds.shape[0]))
-            inds = np.reshape(inds[row_perm, :], (-1,))
+            # Edited by Cuc Nguyen
+	    #inds = np.reshape(inds, (-1, 2))
+	    #row_perm = np.random.permutation(np.arange(inds.shape[0]))
+	    #inds = np.reshape(inds[row_perm, :], (-1,))
+
+	    # consider the case when len(inds) is odd
+	    isodd = len(inds) % 2
+	    if not isodd:
+		inds = np.reshape(inds, (-1,2))
+	    else:
+		tail = inds[-1]
+		inds = np.reshape(inds[:-1], (-1,2))
+	    row_perm = np.random.permutation(np.arange(inds.shape[0]))
+	    inds = np.reshape(inds[row_perm, :], (-1,))
+	    if isodd:
+		inds = np.append(inds, tail)		
+            #end edited
+
             self._perm = inds
         else:
             self._perm = np.random.permutation(np.arange(len(self._roidb)))
@@ -58,9 +73,19 @@ class RoIDataLayer(caffe.Layer):
         if cfg.TRAIN.USE_PREFETCH:
             return self._blob_queue.get()
         else:
+	    # Cuc Nguyen
+            #db_inds = self._get_next_minibatch_inds()
+            #minibatch_db = [self._roidb[i] for i in db_inds]
+            #return get_minibatch(minibatch_db, self._num_classes)
+
             db_inds = self._get_next_minibatch_inds()
+	    
             minibatch_db = [self._roidb[i] for i in db_inds]
-            return get_minibatch(minibatch_db, self._num_classes)
+            try:
+                return get_minibatch(minibatch_db, self._num_classes)
+            except NoLabels:
+		print 'No labels'
+                pass #Have another go
 
     def set_roidb(self, roidb):
         """Set the roidb to be used by this layer during training."""
@@ -174,6 +199,7 @@ class BlobFetcher(Process):
     def _shuffle_roidb_inds(self):
         """Randomly permute the training roidb."""
         # TODO(rbg): remove duplicated code
+	print 'Random permutatin called'
         self._perm = np.random.permutation(np.arange(len(self._roidb)))
         self._cur = 0
 
@@ -192,5 +218,12 @@ class BlobFetcher(Process):
         while True:
             db_inds = self._get_next_minibatch_inds()
             minibatch_db = [self._roidb[i] for i in db_inds]
-            blobs = get_minibatch(minibatch_db, self._num_classes)
-            self._queue.put(blobs)
+            #Cuc Nguyen
+	    #blobs = get_minibatch(minibatch_db, self._num_classes)
+            #self._queue.put(blobs)
+	    try:
+                blobs = get_minibatch(minibatch_db, self._num_classes)
+                self._queue.put(blobs)
+            except NoLabels:
+		print 'No labels'		
+                pass #Keep looping

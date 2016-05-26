@@ -14,8 +14,8 @@ GPU_ID=$1
 NET=$2
 NET_lc=${NET,,}
 ITERS=100000
-DATASET_TRAIN=imagenet_val1
-DATASET_TEST=imagenet_val2
+DATASET_TRAIN=imagenet_train
+DATASET_TEST=imagenet_train
 
 array=( $@ )
 len=${#array[@]}
@@ -26,14 +26,17 @@ LOG="experiments/logs/faster_rcnn_${NET}_${EXTRA_ARGS_SLUG}.txt.`date +'%Y-%m-%d
 exec &> >(tee -a "$LOG")
 echo Logging output to "$LOG"
 
-NET_INIT=data/imagenet_models/${NET}.v2.caffemodel
+
 
 time ./tools/train_net_imagenet.py --gpu ${GPU_ID} \
-  --solver models/${NET}/faster_rcnn_end2end/solver.prototxt \
-  --weights ${NET_INIT} \
+  --solver models/VGG16/faster_rcnn_end2end/solver.prototxt \
+  
   --imdb ${DATASET_TRAIN} \
   --iters ${ITERS} \
   --cfg experiments/cfgs/faster_rcnn_end2end.yml \
+	--weights data/VGG16.v2.caffemodel \
+  --set EXP_DIR seed_rng1701 RNG_SEED 1701
+	
   ${EXTRA_ARGS}
 
 set +x

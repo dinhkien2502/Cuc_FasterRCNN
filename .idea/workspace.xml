@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="83a7a296-dd20-4592-8f30-73374cb8457c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/datasets/factory.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/datasets/pascal_voc.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caffe-fast-rcnn" afterPath="$PROJECT_DIR$/caffe-fast-rcnn" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiments/cfgs/faster_rcnn_end2end.yml" afterPath="$PROJECT_DIR$/experiments/cfgs/faster_rcnn_end2end.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiments/scripts/faster_rcnn_end2end_imagenet.sh" afterPath="$PROJECT_DIR$/experiments/scripts/faster_rcnn_end2end_imagenet.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiments/scripts/test_faster_rcnn_end2end_imagenet.sh" afterPath="$PROJECT_DIR$/experiments/scripts/test_faster_rcnn_end2end_imagenet.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/datasets/__init__.py" afterPath="$PROJECT_DIR$/lib/datasets/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/datasets/factory_imagenet.py" afterPath="$PROJECT_DIR$/lib/datasets/factory_imagenet.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/datasets/imagenet.py" afterPath="$PROJECT_DIR$/lib/datasets/imagenet.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/datasets/imdb.py" afterPath="$PROJECT_DIR$/lib/datasets/imdb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/fast_rcnn/config.py" afterPath="$PROJECT_DIR$/lib/fast_rcnn/config.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/fast_rcnn/train.py" afterPath="$PROJECT_DIR$/lib/fast_rcnn/train.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/roi_data_layer/layer.py" afterPath="$PROJECT_DIR$/lib/roi_data_layer/layer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/roi_data_layer/minibatch.py" afterPath="$PROJECT_DIR$/lib/roi_data_layer/minibatch.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/roi_data_layer/roidb.py" afterPath="$PROJECT_DIR$/lib/roi_data_layer/roidb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/VGG16/faster_rcnn_end2end/test.prototxt" afterPath="$PROJECT_DIR$/models/VGG16/faster_rcnn_end2end/test.prototxt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/VGG16/faster_rcnn_end2end/train.prototxt" afterPath="$PROJECT_DIR$/models/VGG16/faster_rcnn_end2end/train.prototxt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/demo.py" afterPath="$PROJECT_DIR$/tools/demo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/train_net_imagenet.py" afterPath="$PROJECT_DIR$/tools/train_net_imagenet.py" />
+    </list>
+    <ignored path="py-faster-rcnn.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="py-faster-rcnn" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="minibatch.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/roi_data_layer/minibatch.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layer.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/roi_data_layer/layer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2546858">
+              <caret line="70" column="69" selection-start-line="70" selection-start-column="69" selection-end-line="70" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="factory_imagenet.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/datasets/factory_imagenet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="28" column="9" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="imagenet.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/datasets/imagenet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+              <folding>
+                <marker date="1459777708093" expanded="true" signature="248:515" placeholder="import ..." />
+                <marker date="1459777708093" expanded="true" signature="538:12728" placeholder="..." />
+                <marker date="1459777708093" expanded="true" signature="591:1822" placeholder="..." />
+                <marker date="1459777708093" expanded="true" signature="1855:2010" placeholder="..." />
+                <marker date="1459777708093" expanded="true" signature="1864:1946" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1459777708093" expanded="true" signature="2055:2547" placeholder="..." />
+                <marker date="1459777708093" expanded="true" signature="2064:2148" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1459777708093" expanded="true" signature="2585:3485" placeholder="..." />
+                <marker date="1459777708093" expanded="true" signature="2594:2675" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1459777708093" expanded="true" signature="3510:4292" placeholder="..." />
+                <marker date="1459777708093" expanded="true" signature="3519:3680" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1459777708093" expanded="true" signature="4331:5402" placeholder="..." />
+                <marker date="1459777708093" expanded="true" signature="4340:4550" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1459777708093" expanded="true" signature="5428:5711" placeholder="..." />
+                <marker date="1459777708093" expanded="true" signature="5753:6089" placeholder="..." />
+                <marker date="1459777708093" expanded="true" signature="6144:6710" placeholder="..." />
+                <marker date="1459777708093" expanded="true" signature="6754:7729" placeholder="..." />
+                <marker date="1459777708093" expanded="true" signature="6763:6972" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1459777708093" expanded="true" signature="7789:8496" placeholder="..." />
+                <marker date="1459777708093" expanded="true" signature="8545:10431" placeholder="..." />
+                <marker date="1459777708093" expanded="true" signature="8554:8640" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1459777708093" expanded="true" signature="8841:8913" placeholder="..." />
+                <marker date="1459777708093" expanded="true" signature="10487:11632" placeholder="..." />
+                <marker date="1459777708093" expanded="true" signature="11694:12318" placeholder="..." />
+                <marker date="1459777708093" expanded="true" signature="12377:12490" placeholder="..." />
+                <marker date="1459777708093" expanded="true" signature="12527:12728" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="roidb.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/roi_data_layer/roidb.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/lib/roi_data_layer/minibatch.py" />
+        <option value="$PROJECT_DIR$/lib/datasets/imagenet.py" />
+        <option value="$PROJECT_DIR$/lib/roi_data_layer/layer.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="89" />
+    <option name="y" value="-6" />
+    <option name="width" value="1831" />
+    <option name="height" value="1086" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py-faster-rcnn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py-faster-rcnn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py-faster-rcnn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py-faster-rcnn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py-faster-rcnn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py-faster-rcnn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py-faster-rcnn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py-faster-rcnn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py-faster-rcnn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roi_data_layer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py-faster-rcnn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py-faster-rcnn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datasets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../py-faster-rcnn" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="py-faster-rcnn" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="py-faster-rcnn" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="py-faster-rcnn" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="py-faster-rcnn" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="py-faster-rcnn" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="py-faster-rcnn" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="83a7a296-dd20-4592-8f30-73374cb8457c" name="Default" comment="" />
+      <created>1459624963251</created>
+      <option name="number" value="Default" />
+      <updated>1459624963251</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="89" y="-6" width="1831" height="1086" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959038" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lib/roi_data_layer/minibatch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/roi_data_layer/layer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/datasets/factory_imagenet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/datasets/imagenet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="20" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
+          <folding>
+            <marker date="1459777708093" expanded="true" signature="248:515" placeholder="import ..." />
+            <marker date="1459777708093" expanded="true" signature="538:12728" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="591:1822" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="1855:2010" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="1864:1946" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1459777708093" expanded="true" signature="2055:2547" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="2064:2148" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1459777708093" expanded="true" signature="2585:3485" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="2594:2675" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1459777708093" expanded="true" signature="3510:4292" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="3519:3680" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1459777708093" expanded="true" signature="4331:5402" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="4340:4550" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1459777708093" expanded="true" signature="5428:5711" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="5753:6089" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="6144:6710" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="6754:7729" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="6763:6972" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1459777708093" expanded="true" signature="7789:8496" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="8545:10431" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="8554:8640" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1459777708093" expanded="true" signature="8841:8913" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="10487:11632" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="11694:12318" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="12377:12490" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="12527:12728" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/roi_data_layer/roidb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/roi_data_layer/roidb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/datasets/imagenet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+          <folding>
+            <marker date="1459777708093" expanded="true" signature="248:515" placeholder="import ..." />
+            <marker date="1459777708093" expanded="true" signature="538:12728" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="591:1822" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="1855:2010" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="1864:1946" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1459777708093" expanded="true" signature="2055:2547" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="2064:2148" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1459777708093" expanded="true" signature="2585:3485" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="2594:2675" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1459777708093" expanded="true" signature="3510:4292" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="3519:3680" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1459777708093" expanded="true" signature="4331:5402" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="4340:4550" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1459777708093" expanded="true" signature="5428:5711" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="5753:6089" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="6144:6710" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="6754:7729" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="6763:6972" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1459777708093" expanded="true" signature="7789:8496" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="8545:10431" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="8554:8640" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1459777708093" expanded="true" signature="8841:8913" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="10487:11632" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="11694:12318" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="12377:12490" placeholder="..." />
+            <marker date="1459777708093" expanded="true" signature="12527:12728" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/datasets/factory_imagenet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/roi_data_layer/minibatch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/roi_data_layer/layer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2546858">
+          <caret line="70" column="69" selection-start-line="70" selection-start-column="69" selection-end-line="70" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

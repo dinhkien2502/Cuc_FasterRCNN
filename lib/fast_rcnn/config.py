@@ -84,12 +84,12 @@ __C.TRAIN.BBOX_NORMALIZE_TARGETS = True
 __C.TRAIN.BBOX_INSIDE_WEIGHTS = (1.0, 1.0, 1.0, 1.0)
 # Normalize the targets using "precomputed" (or made up) means and stdevs
 # (BBOX_NORMALIZE_TARGETS must also be True)
-__C.TRAIN.BBOX_NORMALIZE_TARGETS_PRECOMPUTED = False
+__C.TRAIN.BBOX_NORMALIZE_TARGETS_PRECOMPUTED = True
 __C.TRAIN.BBOX_NORMALIZE_MEANS = (0.0, 0.0, 0.0, 0.0)
 __C.TRAIN.BBOX_NORMALIZE_STDS = (0.1, 0.1, 0.2, 0.2)
 
 # Train using these proposals
-__C.TRAIN.PROPOSAL_METHOD = 'selective_search'
+__C.TRAIN.PROPOSAL_METHOD = 'gt'
 
 # Make minibatches from images that have similar aspect ratios (i.e. both
 # tall and thin or both short and wide) in order to avoid wasting computation
@@ -97,7 +97,7 @@ __C.TRAIN.PROPOSAL_METHOD = 'selective_search'
 __C.TRAIN.ASPECT_GROUPING = True
 
 # Use RPN to detect objects
-__C.TRAIN.HAS_RPN = False
+__C.TRAIN.HAS_RPN = True
 # IOU >= thresh: positive example
 __C.TRAIN.RPN_POSITIVE_OVERLAP = 0.7
 # IOU < thresh: negative example
@@ -181,13 +181,22 @@ __C.DEDUP_BOXES = 1./16.
 __C.PIXEL_MEANS = np.array([[[102.9801, 115.9465, 122.7717]]])
 
 # For reproducibility
-__C.RNG_SEED = 3
+__C.RNG_SEED = 42
 
 # A small number that's used many times
 __C.EPS = 1e-14
 
 # Root directory of project
 __C.ROOT_DIR = osp.abspath(osp.join(osp.dirname(__file__), '..', '..'))
+
+# Data directory
+__C.DATA_DIR = osp.abspath(osp.join(__C.ROOT_DIR, 'data'))
+
+# Model directory
+__C.MODELS_DIR = osp.abspath(osp.join(__C.ROOT_DIR, 'models', 'imagenet'))
+
+# Name (or path to) the matlab executable
+__C.MATLAB = 'matlab'
 
 # Place outputs under an experiments directory
 __C.EXP_DIR = 'default'
@@ -199,17 +208,19 @@ __C.USE_GPU_NMS = True
 __C.GPU_ID = 0
 
 
-def get_output_dir(imdb, net):
+def get_output_dir(imdb, net=None):
     """Return the directory where experimental artifacts are placed.
+    If the directory does not exist, it is created.
 
     A canonical path is built using the name from an imdb and a network
     (if not None).
     """
-    path = osp.abspath(osp.join(__C.ROOT_DIR, 'output', __C.EXP_DIR, imdb.name))
-    if net is None:
-        return path
-    else:
-        return osp.join(path, net.name)
+    outdir = osp.abspath(osp.join(__C.ROOT_DIR, 'output', __C.EXP_DIR, imdb.name))
+    if net is not None:
+        outdir = osp.join(outdir, net.name)
+    if not os.path.exists(outdir):
+        os.makedirs(outdir)
+    return outdir
 
 def _merge_a_into_b(a, b):
     """Merge config dictionary a into config dictionary b, clobbering the

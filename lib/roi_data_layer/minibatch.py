@@ -13,6 +13,11 @@ import cv2
 from fast_rcnn.config import cfg
 from utils.blob import prep_im_for_blob, im_list_to_blob
 
+#Cuc Nguyen
+class NoLabels(Exception):
+    print 'No labels'
+    pass
+
 def get_minibatch(roidb, num_classes):
     """Given a roidb, construct a minibatch sampled from it."""
     num_images = len(roidb)
@@ -22,6 +27,9 @@ def get_minibatch(roidb, num_classes):
     assert(cfg.TRAIN.BATCH_SIZE % num_images == 0), \
         'num_images ({}) must divide BATCH_SIZE ({})'. \
         format(num_images, cfg.TRAIN.BATCH_SIZE)
+    # Cuc Nguyen
+    if num_images == 0:
+	print '0 images'	
     rois_per_image = cfg.TRAIN.BATCH_SIZE / num_images
     fg_rois_per_image = np.round(cfg.TRAIN.FG_FRACTION * rois_per_image)
 
@@ -36,12 +44,13 @@ def get_minibatch(roidb, num_classes):
         # gt boxes: (x1, y1, x2, y2, cls)
         gt_inds = np.where(roidb[0]['gt_classes'] != 0)[0]
         gt_boxes = np.empty((len(gt_inds), 5), dtype=np.float32)
-        gt_boxes[:, 0:4] = roidb[0]['boxes'][gt_inds, :] * im_scales[0]
+        gt_boxes[:, 0:4] = roidb[0]['boxes'][gt_inds, :] * im_scales[0] 
         gt_boxes[:, 4] = roidb[0]['gt_classes'][gt_inds]
         blobs['gt_boxes'] = gt_boxes
         blobs['im_info'] = np.array(
             [[im_blob.shape[2], im_blob.shape[3], im_scales[0]]],
             dtype=np.float32)
+	
     else: # not using RPN
         # Now, build the region of interest and label blobs
         rois_blob = np.zeros((0, 5), dtype=np.float32)
@@ -68,9 +77,14 @@ def get_minibatch(roidb, num_classes):
 
         # For debug visualizations
         # _vis_minibatch(im_blob, rois_blob, labels_blob, all_overlaps)
+	
+	#Cuc Nguyen
+	if len(labels_blob) == 0:
+            raise NoLabels
 
         blobs['rois'] = rois_blob
         blobs['labels'] = labels_blob
+
 
         if cfg.TRAIN.BBOX_REG:
             blobs['bbox_targets'] = bbox_targets_blob
@@ -134,6 +148,8 @@ def _get_image_blob(roidb, scale_inds):
     processed_ims = []
     im_scales = []
     for i in xrange(num_images):
+	#Cuc Nguyen
+	#print roidb[i]['image']
         im = cv2.imread(roidb[i]['image'])
         if roidb[i]['flipped']:
             im = im[:, ::-1, :]
